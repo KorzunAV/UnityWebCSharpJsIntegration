@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | %UNITY_WEB_NAME%</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="shortcut icon" href="../%UNITY_WEB_NAME%/TemplateData/favicon.ico">
     <link rel="stylesheet" href="../%UNITY_WEB_NAME%/TemplateData/style.css">
     <script src="../%UNITY_WEB_NAME%/test2.js"></script>
@@ -15,19 +16,20 @@
   </head>
   <body>
   
-  <div>
-     <input type="text" id="myText" value="Some text..." contenteditable="true">
-	 <input value="Set to Unity" onclick="updateFromJs()" type="button">
-   </div>	
-	
-  <div class="webgl-content">
-    <div id="gameContainer" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px"></div>
-    <div class="footer">
-      <div class="webgl-logo"></div>
-      <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-      <div class="title">%UNITY_WEB_NAME%</div>
+  <div class="im-centered row">
+       <input type="text" id="myText" value="Some text...">	
+	   <input value="Set to Unity" onclick="updateFromJs()" type="button">
+  </div>
+  <div class="im-centered row">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: %UNITY_WIDTH%px; height: %UNITY_HEIGHT%px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">%UNITY_WEB_NAME%</div>
+      </div>
     </div>
   </div>
-	
+  
   </body>
 <!-- </html> -->
